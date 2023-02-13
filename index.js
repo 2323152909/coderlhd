@@ -1,12 +1,12 @@
 // 响应式对象
-const { reactive, watchFns } = require("./reactive");
-const promise = require("./promise");
-const debounce = require("./debounce");
-const throttle = require("./throttle");
-const deepClone = require("./deepClone");
-const eventBus = require("./eventBus");
-const downloadFile = require("./downloadFile");
-const jsonToExcel = require("./jsonToExcel");
+const { reactive, watchFns } = require('./utils/reactive');
+const promise = require('./utils/promise');
+const debounce = require('./utils/debounce');
+const throttle = require('./utils/throttle');
+const deepClone = require('./utils/deepClone');
+const eventBus = require('./utils/eventBus');
+const downloadFile = require('./utils/downloadFile');
+const jsonToExcel = require('./utils/jsonToExcel');
 
 module.exports = {
   reactive,
@@ -17,7 +17,7 @@ module.exports = {
   deepClone,
   eventBus,
   downloadFile,
-  jsonToExcel,
+  jsonToExcel
 };
 
 export default {
@@ -29,5 +29,5 @@ export default {
   deepClone,
   eventBus,
   downloadFile,
-  jsonToExcel,
+  jsonToExcel
 };
